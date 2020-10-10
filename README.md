@@ -3,7 +3,7 @@
 Your bots, teams and other applications:
 https://discord.com/developers/applications
 
-Tutorail to create a discord bot:
+Tutorial on how to create a discord bot:
 https://discordjs.guide/#before-you-begin
 
 Discord developer resources:
