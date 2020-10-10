@@ -1,17 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- 
-/*
+
+
 const cheerio = require('cheerio');
 const request = require('request');
 
-packages needed to fetch images from google 
 
--> first is to change the format to the one that we want
--> second is arequest package
-*/
+// first is to change the format to the one that we want
+// second is a request package
 
-
+var servers = {};
 
 const prefix = '-';
  
@@ -36,18 +34,40 @@ client.on('message', message =>{
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
- 
+    
+
     if(command === 'ping'){
         client.commands.get('ping').execute(message, args);
-    } else if(command === 'youtube'){
+    
+    }else if(command === 'youtube'){
         client.commands.get('youtube').execute(message, args);
-    } else if(command === 'nigga'){
-        client.commands.get('mod').execute(message, args);
+    
+    }else if (command === 'davinki'){
+        client.commands.get('davinki').execute(message, args);
+    
+    }else if (command === 'react'){
+        message.react('😄');
+    
+    }else if (command === 'fruits'){
+        client.commands.get('fruits').execute(message, args);
+    
+    }else if (command === 'play'){
+        client.commands.get('play').execute(message, args);
+        
+    }else if (command === 'embed'){
+        message.channel.send('https://test.rauf.workers.dev/?author=very+epic');
+
+    }else if (command === 'image'){
+        client.commands.get('image').execute(message, args);
+
     }
+    
+
 });
 
+        
 
 
-client.login(Token);
+client.login(TOKEN);
 
 //   {}
