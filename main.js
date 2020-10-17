@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-const cheerio = require('cheerio');
-const request = require('request');
+//const cheerio = require('cheerio');
+//const request = require('request');
 // first is to change the format to the one that we want
 // second is a request package
 
@@ -56,8 +56,8 @@ client.on('message', message =>{
     }else if (command === 'embed'){
         message.channel.send('https://test.rauf.workers.dev/?author=very+epic');
 
-    }else if (command === 'image'){
-        client.commands.get('image').execute(message, args);
+//    }else if (command === 'image'){
+//        client.commands.get('image').execute(message, args);
 
     }else if (command === 'sum'){
         client.commands.get('sum').execute(message, args);
