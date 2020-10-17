@@ -11,3 +11,16 @@ https://discord.com/developers/docs/intro
 
 Discord.js library resources:
 https://discord.js.org/#/docs/main/stable/general/welcome
+
+
+Prefix: -
+
+Commandes:
+  -ping 
+  -embed
+  -sum
+  -youtube
+  -davinki
+  -react
+  -fruits
+  -help
