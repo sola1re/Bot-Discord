@@ -62,6 +62,9 @@ client.on('message', message =>{
     }else if (command === 'sum'){
         client.commands.get('sum').execute(message, args);
     
+    }else if (command === 'chess'){
+        client.commands.get('chess').execute(message, args);
+     
     }
 
 });
